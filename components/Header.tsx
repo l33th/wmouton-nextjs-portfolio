@@ -2,19 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
 
-const styles = {
-  headerStyles: `sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center`,
-  headerDivStyles: `flex flex-row items-center`,
-  cursorPointer: `cursor-pointer`,
-  getInTouch: `uppercase hidden md:inline-flex text-sm text-gray-400`,
-  emailDivIcon: `flex flex-row items-center text-gray-300 cursor-pointer`,
-};
-
 type Props = {};
 
 const Header = ({}: Props) => {
   return (
-    <header className={styles.headerStyles}>
+    <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
       <motion.div
         initial={{
           x: -500,
@@ -29,7 +21,7 @@ const Header = ({}: Props) => {
         transition={{
           duration: 1.4,
         }}
-        className={styles.headerDivStyles}
+        className="flex flex-row items-center"
       >
         {/* Social Icons */}
         <SocialIcon
@@ -63,15 +55,17 @@ const Header = ({}: Props) => {
         transition={{
           duration: 1.4,
         }}
-        className={styles.emailDivIcon}
+        className="flex flex-row items-center text-gray-300 cursor-pointer"
       >
         <SocialIcon
-          className={styles.cursorPointer}
+          className="cursor-pointer"
           network="email"
           fgColor="gray"
           bgColor="transparent"
         />
-        <p className={styles.getInTouch}>Get In Touch</p>
+        <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
+          Get In Touch
+        </p>
       </motion.div>
     </header>
   );
