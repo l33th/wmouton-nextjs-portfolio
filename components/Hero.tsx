@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-import Link from "next/link";
+// import Link from "next/link";
 import BackgroundCircles from "./BackgroundCircles";
 import wmouton from "../public/wmouton.png";
 
@@ -30,7 +30,7 @@ const Hero = ({}: Props) => {
           <span className="mr-3">{text}</span>
           <Cursor cursorColor="#00CF5D" />
         </h1>
-        <div className="pt-5">
+        {/* <div className="pt-5">
           <Link href="#about">
             <button className="heroButton">About</button>
           </Link>
@@ -43,7 +43,7 @@ const Hero = ({}: Props) => {
           <Link href="#projects">
             <button className="heroButton">Projects</button>
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );

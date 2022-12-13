@@ -1,6 +1,6 @@
 # wmouton-terminal-project
 
-Official WMouton Portfolio website created with NextJS, TypeScript and TailwindCSS and Sanity.
+Official WMouton Portfolio website created with NextJS, TypeScript, TailwindCSS and Sanity.
 
 ---
 
